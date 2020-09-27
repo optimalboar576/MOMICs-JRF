@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<title>Outcomes</title>
+	</head>
+	<head>
+	<style>
+	body {
+	background-image: url(https://footage.framepool.com/shotimg/qf/573833141-3d-strand-street-dna-double-helix-chromosome.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	}
+	</style>
+	</head>
+	<body>
+		<h1>OUTCOMES AND INTERPRETATIONS</h1>
+		<p style="font-family:verdana">
+Different outcomes were found in different tools. As it is a pipeline, the output from the first program is used as input in the next program. 
+The input was a FASTA sequence of the whole genome in GeneMark. As result predicted genes were found (a total of 4793; in both positive and 
+negative strands). Randomly 10 genes were selected for annotation. The genes were saved in one FASTA file. The main annotation tool was Blast2GO.
+There are different other methods for gene annotation. Omicsbox has all of it together in one tool. Omicsbox uses Blast, InterPro Scan and Blast2GO
+altogether for better annotation in a structured format. The final outcome of the annotation is saved in an excel file “Ecoli_annotation.xlsx”. The
+table contained annotation data from Blast (E-value); Interpro scan (Interpro ID,InterPro GO IDs & InterPro GO names). Blast2GO mapping and annotation
+gives the GO IDs, GO names, Enzyme codes, Enzyme names. The GO IDs have prefixes F, P and C; these three represents Function, Process and Component 
+respectively. Theses GO IDs can be accessed in EMBL-EBI Quick-GO. Gene Ontology (GO) is representation of gene and gene product. As representation of 
+outcome one gene ontology for each predicted gene is represented using EMBL-EBI Quick-GO.
+		</p>
+		<p style="font-family:verdana">
+1.Gene_3: P:GO:0007165 – This gene product is associated with signal transduction. The cellular process in which a signal is conveyed to trigger a 
+change in the activity or state of a cell. Signal transduction begins with reception of a signal (e.g. a ligand binding to a receptor or receptor 
+activation by a stimulus such as light), or for signal transduction in the absence of ligand, signal-withdrawal or the activity of a constitutively 
+active receptor.
+		</p>
+		<p style="font-family:verdana">
+2.Gene_17: P:GO:0009234 – Involved in menaquinone biosynthetic process. The chemical reactions and pathways resulting in the formation of any of the 
+menaquinones. Structurally, menaquinones consist of a methylated naphthoquinone ring structure and side chains composed of a variable number of 
+unsaturated isoprenoid residues. Menaquinones that have vitamin K activity and are known as vitamin K2.
+		</p>
+		<p style="font-family:verdana">
+3.Gene_19: F:GO:0005198- Involved in the molecular function of structural molecule activity. The action of a molecule that contributes to the 
+structural integrity of a complex or its assembly within or outside a cell.
+		</p>
+		<p style="font-family:verdana">
+4.Gene_21: F:GO:0016887- The gene product has ATPase activity. Catalysis of the reaction: 
+ATP + H2O = ADP + phosphate + 2 H+. May or may not be coupled to another reaction.
+		</p>
+		<p style="font-family:verdana">
+5.Gene_22: F:GO:0005524- Its function is to bind to ATP. Interacting selectively and non-covalently with ATP, adenosine 5'-triphosphate, a universally 
+important coenzyme and enzyme regulator.
+		</p>
+		<p style="font-family:verdana">
+6.Gene_25: P:GO:0016226- Used in the biological process of iron-sulfer cluster assembly. The incorporation of iron and exogenous sulfur into a metallo
+-sulfur cluster.
+		</p>
+		<p style="font-family:verdana">
+7.Gene_27: C:GO:0019867- It is a cellular component of outer membrane. The external membrane of Gram-negative bacteria or certain organelles such as 
+mitochondria and chloroplasts; freely permeable to most ions and metabolites.
+		</p>
+		<p style="font-family:verdana">
+8.Gene_48: P:GO:0006313- Involved in the biological process of DNA-mediated transposition. Any process involved in a type of transpositional recombination 
+which occurs via a DNA intermediate.
+		</p>
+		<p style="font-family:verdana">
+9.Gene_55: F:GO:0003677- The gene product binds to DNA. Any molecular function by which a gene product interacts selectively and non-covalently with DNA 
+(deoxyribonucleic acid).
+		</p>
+		<p style="font-family:verdana">
+10.Gene_57: P:GO:0019430- It’s involved in the biological process of removal of superoxide radicals. Any process, acting at the cellular level, involved 
+in removing superoxide radicals (O2-) from a cell or organism, e.g. by conversion to dioxygen (O2) and hydrogen peroxide (H2O2).
+		</p>
+		<h4>Table: Imported table from Omicsbox with annotation</h4>
+		<iframe width="1100" height="346" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=88C8C638BFD9B55F%21142444&authkey=%21AK5FZrsZ951dQY4&em=2&AllowTyping=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
+		<h4>List of the genes prdicted using GeneMark (FASTA format)</h4>
+		<iframe width="1100" height="475" src="http://exon.gatech.edu/GeneMark/tmp/heuristic.20200927.103001.3323.gmhmmp.out.fnn"></iframe>
+		<h4>Co ordinates of genes using GeneMark</h4>
+		<iframe width="1100" height="475" src="http://exon.gatech.edu/GeneMark/tmp/heuristic.20200927.103001.3323.gmhmmp.out"></iframe>
+	</body>
+</html>

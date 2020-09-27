@@ -1,0 +1,56 @@
+<html>
+<body bgcolor="#E6FF33" text="black">
+
+<ul>
+<li><a href="blast.htm" target="f3">Home</a></li>
+</ul>
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">TOOLS</button>
+  <div id="myDropdown" class="dropdown-content">
+    <li><a href="blast.htm" target="f3">BLAST</a></li>
+	<li><a href="genious.html" target="f3">Genious</a></li>
+    <li><a href="genemark.htm" target="f3">GENEMARK</a></li>
+    <li><a href="transeq.html" target="f3">EMBOSS Transeq</a></li>
+	<li><a href="interpro.htm" target="f3">InterPro</a></li>
+	<li><a href="blast2go.htm" target="f3">Blast2Go</a></li>
+  </div>
+</div>
+
+</body>
+</html>

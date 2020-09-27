@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>Workflow</title>
+	</head>
+	<head>
+	<style>
+	body {
+	background-image: url(https://footage.framepool.com/shotimg/qf/573833141-3d-strand-street-dna-double-helix-chromosome.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	}
+	</style>
+	</head>
+	<body>
+		<h1>WORKFLOW</h1>
+		<p style="font-family:verdana">
+		1.	In NCBI SRA database searched for Escherichia coli. The Bioproject with ID PRJNA318589 was selected; Whole genome Illumina MiSeq sequence of Escherichia coli. 
+		<p style="font-family:verdana">
+		2.	The run SRR10810132 was selected.
+		<p style="font-family:verdana">
+		3.	Then from ENA(European Nucleotide Archive) fastq files (pair end read) of the selected run was downloaded.
+		<p style="font-family:verdana">
+		4.	For assembly of the genome Genious prime was used. The output was exported as a FASTA file.
+		<p style="font-family:verdana">
+		5.	The FASTA sequence of the assembled genome of E.coli is saved in “E coli.fasta”. 
+		<p style="font-family:verdana">
+		6.Using the “GeneMark.hmm with Heuristic models” genes were annotated (predicted). As output FASTA sequences of the predicted genes were found.
+		A total of 4793 genes were predicted in the complete genome. 
+		<p style="font-family:verdana">
+		7.For annotation of the predicted genes selected at random, a tool named OmicsBox was used. 
+		<p style="font-family:verdana">
+		8.The randomly selected genes were saved in a fasta file. 
+		<p style="font-family:verdana">
+		9.The file was loaded to OmicsBox*.
+		<p style="font-family:verdana">
+		10.Functional analysis was done in OmicsBox. First all the sequences were searched for Interpro Scan. Then a Blast run was done. The results were
+		automatically saved in a tabular format.
+		<p style="font-family:verdana">
+		11.After the blast and Interpro scan Blast2GO mapping was done, which was needed for Blast2GO annotation. Again the mapping and annotation results
+		were saved in respective columns in the table. The table was exported.
+		<p style="font-family:verdana">
+*- OmicsBox was used for the convenience of annotation. In OmicsBox Interpro Scan and Blast was done. For standalone Interpro Scan, the predicted gene has 
+to be translated into a protein sequence; for which EMBOSS Transeq has to be used. The output protein sequence is then used as input for InterPro Scan. 
+EMBOSS Transeq and Interpro Scan is also included in the tools list. 
+		</p>
+	</body>
+</html>
